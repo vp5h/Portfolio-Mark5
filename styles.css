@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #10B981;
+    --primary-color: #10b96a;
     --off-white: #6e6e6e;
     --dark-gray: #6B7280;
     --gray: #F3F4F6;
@@ -209,3 +209,36 @@ hr {
 .blog {
     margin-top: 5rem;
 }
+
+@media only screen and (max-width: 520px) {
+    .blog {
+      margin-top: 3rem;
+      padding: 0rem 0.8rem;
+    }
+    .blog img {
+        max-width: 320px;
+      margin-top: 2.8rem;
+      margin-bottom: 1.2rem;
+    }
+    .blog time {
+      font-size: 14px;
+    }
+    .blog h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+
+  @media only screen and (max-width: 520px) {
+    .hero-img {
+      max-width: 320px;
+    }
+    .hero {
+      padding-top: 3rem;
+    }
+    /* .blog img {
+      max-width: auto;
+      max-height: auto;
+      width: 100%;
+    } */
+  }
