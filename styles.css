@@ -33,6 +33,7 @@ hr {
 .container-center {
     max-width: 600px;
     margin: auto;
+    border-radius: 2rem;
 }
 
 /** links **/
@@ -165,6 +166,7 @@ hr {
 .footer {
     background-color: var(--primary-color);
     padding: 4rem 1rem;
+    margin-top: 2rem;
     text-align: center;
     color: white;
     border-top-right-radius: 1rem;
@@ -191,4 +193,19 @@ hr {
 /** blogs **/
 .showcase-blog {
     padding-bottom: 6rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+.section-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog {
+    margin-top: 5rem;
 }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" />
+    <title>blogs | Pravesh Vyas</title>
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand"><a href="/">Pravesh Vyas</a></div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="/">home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link " href="/projects.html">projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/blogs.html">blogs</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+    <div class="container container-center section-center">
+
+    <div class="blog">
+        <h1>Asynchronous JavaScript</h1>
+        <time>July 16, 2021 · 3 min read</time>
+        <img src="../images/Asynchronous.png" alt="">
+        <p>When we write synchronous JavaScript code, we’re
+            providing a list of instructions that execute immediately in order. For example, if we wanted to use
+            JavaScript to handle some simple DOM
+            manipulation, we’d write the code to do so like this:
+        </p>
+        <h2>Promises with Fetch</h2>
+        <p>Making a request to a REST API used to be pretty cumbersome. We’d
+            have to write 20+ lines of nested code just to load some data into our
+            app. Then the fetch() function showed up and simplified our lives.
+        </p>
+        <pre class="language-javascript"><code class="language-javascript">
+const getFakePerson = async () =&gt; {
+try {
+    let res = await fetch("abc.com")
+    let { results } = res.json();
+    console.log(results)
+}
+}
+
+getFakePerson();
+</code>
+</pre>
+        <p>Making a request to a REST API used to be pretty cumbersome. We’d
+            have to write 20+ lines of nested code just to load some data into our
+            app. Then the fetch() function showed up and simplified our lives.
+        </p>
+    </div>
+</div>
+<br>
+</section>
+
+
+
+<footer class="footer">
+    <div class="footer-header">Socials</div>
+    <ul class="social-links list-non-bullet">
+        <li class="list-item-inline">
+            <a class="link" href="https://github.com/vp5h">
+                Github
+            </a>
+        </li>
+        <li class="list-item-inline">
+            <a class="link" href="https://twitter.com/v_p5h">
+                Twitter
+            </a>
+        </li>
+        <li class="list-item-inline">
+            <a class="link" href="https://www.linkedin.com/in/vp5h/">
+                Linkedin
+            </a>
+        </li>
+        
+    </ul>
+</footer>
+
+</body>
+</html>
