@@ -7,7 +7,10 @@
     --gray: #F3F4F6;
    
 }
-
+a{
+   
+    color: azure;
+}
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
@@ -236,6 +239,7 @@ hr {
     .hero {
       padding-top: 3rem;
     }
+    
     /* .blog img {
       max-width: auto;
       max-height: auto;
