@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>React from 33000ft | Pravesh Vyas</title>
+</head>
+
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand"><a href="/">Pravesh Vyas</a></div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link " href="/projects.html">Projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/blogs.html">Blogs</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="container container-center">
+
+            <div class="blog">
+                <h1>React from 33000ft</h1>
+                <time>July 16, 2021 · 3 min read</time>
+                <!-- <img src="../images/Asynchronous.png" alt=""> -->
+                <p id="0d427c30-ec3e-4d41-b2d7-a5cddee0ff06" class="">Hi Folks, It&#x27;s 2021, We all agree on the fact
+                    that React Came out as the most popular Library in JavaScript Scene for Good Enough Time. In my
+                    reasoning It came on top Because, It was meant for scale people at Facebook, Designed It in a way that
+                    really solves a critical problem, of all the models of time, Which is Re Rendering on the smallest of
+                    changes that occur some where deep inside the Tree. This use to cause Cascading Changes in DOM, Which
+                    would make code unreliable for Devs to Change on, Nobody would be interested to do changes in such a
+                    messy system, Which in turn causes Dev Processes so slow down.</p>
+                <p id="8f668a76-e590-45e4-8b1a-520088a04081" class="">Now that you have Heard the Story lets look, In to
+                    Tech that Enabled this, If you go to React&#x27;s Home page you would see the Following things </p>
+                <h2 id="1acb2f72-f824-4ace-89c0-899a790b61d6" class="">Declarative </h2>
+                <p id="495b2802-9e70-47ec-afc9-437adc3e41b0" class="">To understand this we need to Understand what&#x27;s
+                    the Difference between a declarative and imperative way of doing Things.</p>
+                <p id="9ba997db-a902-4b9e-ac30-1d18b594d42b" class="">In a Nutshell, We can say that, We are choosing to
+                    Loose control over Control Flow to make our code more Reusable and Performant , There&#x27;s a Saying
+                    that you take better decisions by not Taking decisions at all.</p>
+                <p id="97c2521a-a770-4bd3-9440-0c776a977a3f" class=""><a
+                        href="https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2">For getting More
+                        detialed Perview Head on to</a></p>
+                
+                <h2 id="8853f648-105f-40ed-a449-cd955976e816" class="">Component Based System</h2>
+                <p id="a2237adc-0ec3-49a9-8b38-33a468c9f871" class="">FaceBook had Been Playing around with these sort of
+                    things for a long till they got to React, They had a php Extension called Xhp, Which got you out from
+                    the hassle of Opening and closing &lt;?php&gt; Tags all around the code </p>
+                <p id="3d491dac-8fca-4441-864f-ff111ea5e75b" class="">They introduced a New type of Syntax where they passed
+                    Html elements as functions. It worked out great for them. The Above extension also had a feature of
+                    Making Components, Which directly impacted the contributed to the creation of Component based System.
+                </p>
+                <p id="2d7d9388-943c-4d1c-a0fe-547020e78a03" class="">
+                </p>
+                <h2 id="aa2d56e3-8ed5-41a5-9e27-5fb24bc6be9e" class="">Virtual Dom</h2>
+                <figure id="649e1421-ca8f-4c51-8e7f-4d325ee2a2d5" class="image"><a
+                        href="33000ft%20View%20of%20React%20649e1421ca8f4c518e7f4d325ee2a2d5/Untitled.png"><img
+                            style="width:60vw"
+                            src="33000ft%20View%20of%20React%20649e1421ca8f4c518e7f4d325ee2a2d5/Untitled.png" /></a>
+                </figure>
+                <p id="8410991b-3172-4a22-adce-761854cb252f" class="">Before understanding Virtual Dom, Lets get hang of
+                    DOM. It stands for Document object model, It basically represents the UI of the whole App as a Tree Data
+                    Structure. It all works Fine and good until you add Complex Functionality to the App. To solve this What
+                    React Developers Did Was they introduced a Virtual Dom which Calculates and Process everything that Real
+                    Dom would do whenever a change happens. And choose a way in which Least manipulation will Happen in the
+                    DOM and Hence Cause a Better end User Experience</p>
+                <p id="fbd6e1cb-999f-4980-9f38-9b00a2d6bdc4" class=""><a
+                        href="https://programmingwithmosh.com/react/react-virtual-dom-explained/">More Details</a>
+                </p>
+                <p id="12303de9-9a40-4bd8-82de-72ac2af406e6" class="">
+                </p>
+                <h2 id="a1182eba-104b-4aea-9053-8c5f99c4f050" class="">Server Side Rendering</h2>
+                <p id="9f23e859-54c1-40f8-8dfb-716498c8fdaa" class="">Its is one of those Features That Comes out of the box
+                    in React, What happens here is the app Pre Renders the Whole HTML of the Page and Sends it to the
+                    Client, Reducing the Render Cost that comes on to the user, It also Is used Heavily when we are
+                    interacting with constantly changing data, These Days People are Using NexT.js and NuxT.js For Complex
+                    Apps. Which Work on the Above Principle </p>
+                <p id="b887540b-dc70-4237-b709-98348d926600" class="">
+                </p>
+                <p id="2713dbca-d79d-40b9-8265-386e109a9089" class="">This Sums Up the Core Features of React, I think
+                    Nothing Can Go this Big, Without the contribution from community</p>
+                <p id="fcbf5caa-3749-49b7-88e3-9de3a70f24e2" class="">
+                </p>
+                <p id="43d806cf-f2bf-4783-8cae-85bdbc1127d7" class="">
+                </p>
+                <p id="68dec5cb-44d7-4305-b335-4245a6723253" class="">
+                </p>
+                <p id="e192673c-eab1-4896-98a6-03af05877a75" class="">Which Caused it become How Popular it is today, Of
+                    course It Wouldn&#x27;t have been possible without the Opensource Community we have around it.</p>
+                <p id="81c72be3-13b0-4b9d-9231-77ab8c709934" class="">
+                </p>
+            </div>
+        </div>
+        <br>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-header">Socials</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/vp5h">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/v_p5h">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/vp5h/">
+                    <i class="fab fa-linkedin-in fa-2x"></i>
+                </a>
+            </li>
+
+        </ul>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Git Merge| Pravesh Vyas</title>
+</head>
+
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand"><a href="/">Pravesh Vyas</a></div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link " href="/projects.html">Projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/blogs.html">Blogs</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="container container-center">
+
+            <div class="blog">
+                <h1>Git Merge</h1>
+                <time>July 16, 2021 · 3 min read</time>
+                <!-- <img src="../images/Asynchronous.png" alt=""> -->
+                <p id="69ccd335-d637-4466-949a-16c8c2c9c3c3" class="">Git Merge, It is one of those concepts that
+                    newbies Barely use, These are Majorly used in cases where we need to development on a Experimental
+                    feature or Want to try something which we don&#x27;t like to ship. The Idea of Merging two separate
+                    branches to one always fascinated me, But I always use to think How would Merge Conflicts be
+                    resolved in a case Where things don&#x27;t add Up or we have a file which has two different version
+                    on two separate branches. Lets see How Merging Works in Git.</p>
+                <p id="95d4d989-9614-489e-aca5-5c4c531b6b52" class=""></p>
+                </p>
+                <p id="91983816-9d25-4f0f-bc36-984fce9f1d86" class="">According to definition </p>
+                <blockquote id="8823d88f-eba9-435e-aeff-9294b55face7" class="">Git merge will combine multiple sequences
+                    of commits into one unified history. In the most frequent use cases, git merge is used to combine
+                    two branches. The following examples in this document will focus on this branch merging pattern. In
+                    these scenarios, git merge takes two commit pointers, usually the branch tips, and will find a
+                    common base commit between them. Once Git finds a common base commit it will create a new
+                    &quot;merge commit&quot; that combines the changes of each queued merge commit sequence.
+                </blockquote>
+                <p id="6ee9d2eb-bf0b-4782-9456-ebd0c2ebf1bc" class="">
+                </p>
+                <img
+                            style="width:70vw"
+                            src="Git%20Merge%2036c26e77610b44838a665e0c49b0d876/01_Branch-2_kopiera.png" />
+                <p id="c69b0f4c-7af7-46ea-aa81-4d1421c7d555" class="">
+                </p>
+                <img
+                            style="width:70vw"
+                            src="Git%20Merge%2036c26e77610b44838a665e0c49b0d876/02_Branch-1_kopiera.png" />
+                <p id="e03d686f-dff0-4b77-aad4-16e9e6ea4a1d" class="">In the above image we can see that there is a
+                    Common base between the Two Points we want to Merge, What happens here is Git Diffs Both the
+                    Branches Against there Common Ancestor and Calculates Changes based on it. </p>
+                <p id="2c9f0cce-9af7-4a5e-9a60-ba6586b088fa" class="">
+                </p>
+                <h3 id="968ab1e4-e278-4199-85b9-2206045c7735" class="">Types Of Merges</h3>
+                <ol type="1" id="07eae17c-a0fd-4705-b229-71931efe7c01" class="numbered-list" start="1">
+                    <li>Fast Forward Merge.<p id="eb6f7a43-7235-46f5-9f63-1f3639712996" class="">It occurs when
+                            there&#x27;s a direct path between the current branch tip and the Current Tip. It Basically
+                            merges the history of Both the Tips.</p>
+                        <p id="fcb9436b-2d70-489e-86c7-b6e41b5c9d69" class="">
+                        </p>
+                       <img
+                                    style="width:70vw"
+                                    src="Git%20Merge%2036c26e77610b44838a665e0c49b0d876/03-04_Fast_forward_merge.svg" />
+                        <p id="9fca36ae-78df-4a28-b587-6730d03949f6" class="">
+                        </p>
+                    </li>
+                </ol>
+                <p id="99b43173-2184-46be-9d2d-75ce78a3d96c" class="">
+                </p>
+                <p id="b0814b9b-c0b9-45ee-8f2e-c9f5ff27913a" class="">
+                </p>
+                <p id="4386e769-9bd0-40cc-8654-9540da34591e" class="">
+                </p>
+                <ol type="1" id="29ca5433-e768-4e10-80d4-ac260a619ec7" class="numbered-list" start="2">
+                    <li>3 way merge<p id="c1d21bd4-62c7-456c-a646-39abb8008eae" class="">This Happens when there&#x27;s
+                            no direct path between the Main and Current Branch. The Name comes from the Fact that git
+                            uses three commits to get make the merge commit it combines the source, feature and common
+                            base to come to a new merged commit .</p>
+                    </li>
+                </ol>
+                <p id="3dbaec83-6e2e-4026-a65c-2c2338bb9b90" class="">
+                </p>
+               <img
+                            style="width:70vw"
+                            src="Git%20Merge%2036c26e77610b44838a665e0c49b0d876/05-06_Fast_forward_merge.svg" />
+                <p id="16f8feb3-791e-48af-b224-87a4877246ff" class="">In a three way there could conflicts to files
+                    changes in the both the Tips</p>
+                <h2 id="acad4df9-7fc4-40fb-9739-91b35fbdb039" class="">Conflict Resolution</h2>
+                <p id="4c92cc21-68ff-4693-93b3-9f316d305779" class="">To resolve them what we need to do is change the
+                    files and Use the Command </p>
+                <pre id="8ec1e6e8-db10-44f0-8a08-b5b275cecaac" class="code"><code>Git Add </code></pre>
+                <p id="f0e26847-a810-4093-8266-073fd8e8876d" class="">and then </p>
+                <pre id="cd60e705-c6ee-46a9-81f4-f37a8bbd92c8"
+                    class="code"><code>GIt Commit -m &quot;SomeThing here&quot; </code></pre>
+                <p id="0bad45b4-4a31-4a73-8cf7-93f619832999" class="">To get the Tips Merges </p>
+                <p id="fd21ef60-8c5e-4df1-86b7-2a2bab2395eb" class="">and it will create the Merged Branch.</p>
+                <p id="deac6cb4-6af7-44d7-89ab-920fda5fa04d" class="">Various Commands that can help in resolution of
+                    conflicts.</p>
+                <pre id="843b16b4-f6af-47e1-becd-e84e25150dd0" class="code"><code>git log —merge</code></pre>
+                <p id="cbb207d5-4fe3-4f63-be78-a9d3e09caa14" class="">It helps in producing the list of command that are
+                    causing the conflicts</p>
+                <pre id="6306b908-b324-419c-9e1f-c68ebaf2d2bf" class="code"><code>git Diff</code></pre>
+                <p id="42712ebd-6d73-430a-abeb-85ae850f9603" class="">It helps in finding the difference between files
+                    between two States</p>
+                <pre id="fabb168f-e7c1-4c4d-a031-5afbce78b280" class="code"><code>Git merge —abort</code></pre>
+                <p id="f0d0c16b-d669-42ab-b682-d8fccea85a51" class="">It helps by ending the merge process returns the
+                    repo into the original state as it was before merging happened.</p>
+                <p id="05d2b323-1a93-4c84-b285-4f00d9e5ebdd" class="">
+                </p>
+                <p id="23b73d48-f7ab-4351-822e-790a83d805f3" class="">That Sums up how merging Works Across Branches.
+                </p>
+            </div>
+        </div>
+        <br>
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-header">Socials</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/vp5h">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/v_p5h">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/vp5h/">
+                    <i class="fab fa-linkedin-in fa-2x"></i>
+                </a>
+            </li>
+
+        </ul>
+    </footer>
+
+</body>
+
+</html>
